@@ -17,7 +17,6 @@
  * along with jmidpoint.  If not, see <http://www.gnu.org/licenses/>.    *
  *************************************************************************/
 
-
 package org.jmidpoint;
 
 import javax.swing.*;
@@ -27,7 +26,7 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.util.Random;
 
-public class MpGUI extends JFrame {
+public class MidpointGUI extends JFrame {
 
 	private JLabel maxlevelLabel;
 
@@ -79,7 +78,7 @@ public class MpGUI extends JFrame {
 
 	private Boolean finished;
 
-	public MpGUI() {
+	public MidpointGUI() {
 
 		initGUI();
 
@@ -165,8 +164,8 @@ public class MpGUI extends JFrame {
 					JOptionPane
 							.showMessageDialog(
 									null,
-									"The programm is still calculating. Please wait" +
-									" until it finishes before starting it again.",
+									"The programm is still calculating. Please wait"
+											+ " until it finishes before starting it again.",
 									"Still calculating",
 									JOptionPane.INFORMATION_MESSAGE);
 				}
@@ -298,7 +297,7 @@ public class MpGUI extends JFrame {
 
 	public static void main(String[] args) {
 
-		new MpGUI().setVisible(true);
+		new MidpointGUI().setVisible(true);
 
 	}
 
