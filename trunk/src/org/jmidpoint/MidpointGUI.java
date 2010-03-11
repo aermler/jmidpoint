@@ -28,6 +28,8 @@ import java.util.Random;
 
 public class MidpointGUI extends JFrame {
 
+	public static final String jm_version = "0.1";
+
 	private JLabel maxlevelLabel;
 
 	private JLabel sigmaLabel;
@@ -139,7 +141,7 @@ public class MidpointGUI extends JFrame {
 		bg.add(textRB);
 
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-		setTitle("jMidpoint 0.2");
+		setTitle("jMidpoint " + jm_version);
 
 		// final Boolean finished = false;
 
