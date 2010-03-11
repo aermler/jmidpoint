@@ -17,45 +17,46 @@
  * along with jmidpoint.  If not, see <http://www.gnu.org/licenses/>.    *
  *************************************************************************/
 
+// Tools for the midpoint algorithm for command-line usage
 
 package org.jmidpoint;
 
 import java.util.Arrays;
 
+class MidpointTools {
 
-class Tools {
-	
-//	static <T> void array2dout(T[][] array) {
-//		for (int i = 0; i < array.length; i++) {
-//			for (int j = 0; j < array.length; j++) {
-//				System.out.print(array[i][j] +" ");
-//			}
-//			System.out.print("\n");
-//		}
-//	}
-		
-//	// writes a 2d-int-array to stdout
+	// static <T> void array2dout(T[][] array) {
+	// for (int i = 0; i < array.length; i++) {
+	// for (int j = 0; j < array.length; j++) {
+	// System.out.print(array[i][j] +" ");
+	// }
+	// System.out.print("\n");
+	// }
+	// }
+
+	// // writes a 2d-int-array to stdout
 	static int array2dOut(int[][] array) {
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array.length; j++) {
-				System.out.print(array[i][j] +" ");
+				System.out.print(array[i][j] + " ");
 			}
 			System.out.print("\n");
 		}
 		return array.length;
 	}
-	
+
 	// writes a 2d-double-array to stdout
 	static void array2dOut(double[][] array) {
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array.length; j++) {
-				System.out.print(array[i][j] +" ");
+				System.out.print(array[i][j] + " ");
 			}
 			System.out.print("\n");
 		}
 	}
-	
-	// counts for each class how many fields are taken and writes the number to stdout
+
+	// counts for each class how many fields are taken and writes the number to
+	// stdout
 	static void count2dArray(int[][] array, int classes) {
 		int[] counts = new int[classes];
 		for (int i = 0; i < array.length; i++) {
@@ -64,7 +65,7 @@ class Tools {
 					if (array[i][j] == k) {
 						counts[k]++;
 					}
-						
+
 				}
 			}
 		}

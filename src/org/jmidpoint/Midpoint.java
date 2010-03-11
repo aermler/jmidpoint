@@ -17,7 +17,6 @@
  * along with jmidpoint.  If not, see <http://www.gnu.org/licenses/>.    *
  *************************************************************************/
 
-
 package org.jmidpoint;
 
 import java.util.Arrays;
@@ -75,7 +74,7 @@ class Midpoint {
 	 */
 	Midpoint(int maxlevel, double sigma, double h, boolean addition, int seed) {
 		this.maxlevel = maxlevel; // maximal number of recursions (n = 2 ^
-									// maxlevel)
+		// maxlevel)
 		this.sigma = sigma; // initial standard deviation
 		this.h = h; // parameter that determines fractal dimension (dd = 3 - h)
 		this.addition = addition; // turns on/off random additions
@@ -99,8 +98,8 @@ class Midpoint {
 		Random rf3 = new Random();
 		return ((x0 + x1 + x2) / 3 + delta * rf3.nextGaussian());
 	}
-	
-	//TODO: Random() vs. Math.random() überprüfen
+
+	// TODO: Random() vs. Math.random() überprüfen
 
 	/**
 	 * Helper function for 4 variables. Helper function for 4 variables.
@@ -154,15 +153,15 @@ class Midpoint {
 
 	// returns the 2d-array divided into (# of probabilities) classes
 	/**
-	 * Returns a 2d-array of integers divided into classes.
-	 * Returns a 2D-array of integers divided into classes. 
+	 * Returns a 2d-array of integers divided into classes. Returns a 2D-array
+	 * of integers divided into classes.
 	 * 
 	 * @param probabilities
 	 *            Array of the probabilites of the classes, the field is divided
 	 *            into a number of classes determined by the length of this
 	 *            array. Have to be 1.0 added together
 	 * @return 2D-Array divided into classes, number of classes determined by
-	 *         the length of the input array. 
+	 *         the length of the input array.
 	 * 
 	 */
 	public int[][] getIntField(double[] probabilities) {
@@ -209,7 +208,7 @@ class Midpoint {
 
 			}
 		}
-//		System.out.println(iField.length);
+		// System.out.println(iField.length);
 		return iField;
 	}
 
@@ -406,11 +405,11 @@ class Midpoint {
 		this.dim = dim;
 		update();
 	}
-	
+
 	public int getFieldSize() {
 		return iField.length;
 	}
-	
+
 	public int getFieldCell(int x, int y) {
 		return iField[x][y];
 	}
