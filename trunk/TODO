@@ -1,0 +1,11 @@
+Ideas for future versions:
+
+- Seperate threads: gui - calculation
+- Export result as text or image
+- Tooltips/Documentation
+- Grey out button while calculating
+- Output of original algorithm without mapping to different classes
+
+Distant future:
+- Other algorithms
+- 3D output of original algorithm/landscape
